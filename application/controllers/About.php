@@ -58,6 +58,7 @@ class About extends Application {
     {
         //$this->load->view('about');
         $this->data['pagebody'] = 'about';
+        $this->data['pagetitle'] = 'About This Gallery';
         $this->render();
     }
 }

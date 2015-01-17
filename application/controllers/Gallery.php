@@ -40,6 +40,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Gallery extends Application {
 
     /**
+     * Constructor.
+     * Establish view parameters & load common helpers
+     */
+    function __construct()
+    {
+        parent::__construct();
+        $this->data = array();
+        $this->data['pagetitle'] = 'The Gallery';
+    }
+
+    /**
      * Index Page for this controller.
      *
      * Maps to the following URL
